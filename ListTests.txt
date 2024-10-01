@@ -31,6 +31,38 @@ Define tests for at least 21 change scenarios, in addition to the 3 given as exa
     listIterator(0) throws UnsupportedOperationException
     toString returns "[]"
 2) [] -> addToFront(A) -> [A]
+  Tests:
+    addToFront(B) throws no Exception
+    addToRear(B) throws no Exception
+    addAfter(A, B) throws no Exception
+    add(B) throws no Exception
+    add(-1, B) throws IndexOutOfBoundsException
+    add(0, B) throws no Exception
+    add(1, B) throws IndexOutOfBoundsException
+    removeFirst() throws no Exception
+    removeLast() throws no Exception
+    remove(A) throws no Exception
+    remove(B) throws NoSuchElementException
+    remove(-1) throws IndexOutOfBoundsException
+    remove(0) throws no Exception
+    remove(1) throws IndexOutOfBoundsException
+    set(-1, B) throws IndexOutOfBoundsException
+    set(0, B) throws no Exception
+    get(-1) throws IndexOutOfBoundsException
+    get(0) returns A
+    get(1) throws IndexOutOfBoundsException
+    indexOf(A) returns 0
+    indexOf(B) returns -1
+    first() throws no Exception
+    last() throws no Exception
+    contains(A) returns true
+    contains(B) returns false
+    isEmpty() returns false
+    size() returns 1
+    iterator() returns an Iterator reference
+    listIterator() throws UnsupportedOperationException
+    listIterator(0) throws UnsupportedOperationException
+    toString returns "[A]"       
 3) [] -> addToRear(A) -> [A]
 4) [] -> add(A) -> [A]
 5) [] -> add(0,A) -> [A]
@@ -79,7 +111,95 @@ Define tests for at least 21 change scenarios, in addition to the 3 given as exa
     listIterator(0) throws UnsupportedOperationException
     toString() returns "[B, A]"
 7) [A] -> addToRear(B) -> [A,B]
-8) [A] -> addAfter(B,A) -> [A,B]
+// 2nd scenario from one element to two element
+  Tests:
+    addToFront(C) throws no Exceptions
+    addToRear(C) throws no Exceptions
+    addAfter(C, B) throws no Exceptions
+    addAfter(C, A) throws no Exceptions
+    addAfter(C, D) throws NoSuchElementException
+    add(C) throws no Exception
+    add(-1,C) throws IndexOutOfBoundsException
+    add(0,C) throws no Exception
+    add(1,C) throws no Exception
+    add(2,C) throws no Exception
+    add(3,C) throws IndexOutOfBoundsException
+    removeFirst() returns A
+    removeLast() returns B
+    remove(A) returns A
+    remove(B) returns B
+    remove(C) throws NoSuchElementException
+    remove(-1) throws IndexOutOfBoundsException
+    remove(0) returns A
+    remove(1) returns B
+    remove(2) throws IndexOutOfBoundsException
+    set(-1,C) throws IndexOutOfBoundsException
+    set(0,C) throws no Exception
+    set(1,C) throws no Exception
+    set(2,C) throws IndexOutOfBoundsException
+    get(-1) throws IndexOutOfBoundsException
+    get(0) returns A
+    get(1) returns B
+    get(2) throws IndexOutOfBoundsException
+    indexOf(A) returns 0
+    indexOf(B) returns 1
+    indexOf(C) returns -1
+    first() returns A
+    last() returns B
+    contains(A) returns true
+    contains(B) returns true
+    contains(C) returns false
+    isEmpty() returns false
+    size() returns 2
+    iterator() returns an Iterator reference
+    listIterator() throws UnsupportedOperationException
+    listIterator(0) throws UnsupportedOperationException
+    toString() returns "[A, B]"
+8) [A] -> addAfter(B,A) -> [A,B] 
+// 2nd scenario from one element to two element
+  Tests:
+    addToFront(C) throws no Exceptions
+    addToRear(C) throws no Exceptions
+    addAfter(C, B) throws no Exceptions
+    addAfter(C, A) throws no Exceptions
+    addAfter(C, D) throws NoSuchElementException
+    add(C) throws no Exception
+    add(-1,C) throws IndexOutOfBoundsException
+    add(0,C) throws no Exception
+    add(1,C) throws no Exception
+    add(2,C) throws no Exception
+    add(3,C) throws IndexOutOfBoundsException
+    removeFirst() returns A
+    removeLast() returns B
+    remove(A) returns A
+    remove(B) returns B
+    remove(C) throws NoSuchElementException
+    remove(-1) throws IndexOutOfBoundsException
+    remove(0) returns A
+    remove(1) returns B
+    remove(2) throws IndexOutOfBoundsException
+    set(-1,C) throws IndexOutOfBoundsException
+    set(0,C) throws no Exception
+    set(1,C) throws no Exception
+    set(2,C) throws IndexOutOfBoundsException
+    get(-1) throws IndexOutOfBoundsException
+    get(0) returns A
+    get(1) returns B
+    get(2) throws IndexOutOfBoundsException
+    indexOf(A) returns 0
+    indexOf(B) returns 1
+    indexOf(C) returns -1
+    first() returns A
+    last() returns B
+    contains(A) returns true
+    contains(B) returns true
+    contains(C) returns false
+    isEmpty() returns false
+    size() returns 2
+    iterator() returns an Iterator reference
+    listIterator() throws UnsupportedOperationException
+    listIterator(0) throws UnsupportedOperationException
+    toString() returns "[A, B]"
 9) [A] -> add(B) -> [A,B]
 10) [A] -> add(0,B) -> [B,A]
 11) [A] -> add(1,B) -> [A,B]
@@ -89,6 +209,57 @@ Define tests for at least 21 change scenarios, in addition to the 3 given as exa
 15) [A] -> remove(0) -> []
 16) [A] -> set(0,B) -> [B]
 17) [A,B] -> addToFront(C) -> [C,A,B]
+// 1st scenario from two element to three element
+  Tests:
+    addToFront(D) throws no Exceptions
+    addToRear(D) throws no Exceptions
+    addAfter(D, B) throws no Exceptions
+    addAfter(D, A) throws no Exceptions
+    addAfter(D, C) throws no Exception
+    addAfter(D, E) throws NoSuchElementException
+    add(D) throws no Exception
+    add(-1,D) throws IndexOutOfBoundsException
+    add(0,D) throws no Exception
+    add(1,D) throws no Exception
+    add(2,D) throws no Exception
+    add(3,D) throws IndexOutOfBoundsException
+    removeFirst() returns C
+    removeLast() returns B
+    remove(A) returns A
+    remove(B) returns B
+    remove(C) returns C
+    remove(D) throws NoSuchElementException
+    remove(-1) throws IndexOutOfBoundsException
+    remove(0) returns C
+    remove(1) returns A
+    remove(1) returns B
+    remove(3) throws IndexOutOfBoundsException
+    set(-1,D) throws IndexOutOfBoundsException
+    set(0,D) throws no Exception
+    set(1,D) throws no Exception
+    set(2,D) throws no Exception
+    set(3,D) throws IndexOutOfBoundsException
+    get(-1) throws IndexOutOfBoundsException
+    get(0) returns C
+    get(1) returns A
+    get(2) returns B
+    get(3) throws IndexOutOfBoundsException
+    indexOf(A) returns 1
+    indexOf(B) returns 2
+    indexOf(C) returns 0
+    indexOf(D) returns -1
+    first() returns C
+    last() returns B
+    contains(A) returns true
+    contains(B) returns true
+    contains(C) returns true
+    contains(D) returns false
+    isEmpty() returns false
+    size() returns 3
+    iterator() returns an Iterator reference
+    listIterator() throws UnsupportedOperationException
+    listIterator(0) throws UnsupportedOperationException
+    toString() returns "[C, A, B]"
 18) [A,B] -> addToRear(C) -> [A,B,C]
 19) [A,B] -> addAfter(C,A) -> [A,C,B]
 20) [A,B] -> addAfter(C,B) -> [A,B,C]
@@ -111,6 +282,7 @@ Define tests for at least 21 change scenarios, in addition to the 3 given as exa
 37) [A,B,C] -> remove(C) -> [A,B]
 38) [A,B,C] -> remove(0) -> [B,C]
 39) [A,B,C] -> remove(1) -> [A,C]
+// 
   Tests:
     addToFront(D) throws no Exceptions
     addToRear(D) throws no Exceptions
