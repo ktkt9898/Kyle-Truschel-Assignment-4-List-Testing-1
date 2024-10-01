@@ -31,6 +31,7 @@ Define tests for at least 21 change scenarios, in addition to the 3 given as exa
     listIterator(0) throws UnsupportedOperationException
     toString returns "[]"
 2) [] -> addToFront(A) -> [A]
+// 1st scenario from empty to one element
   Tests:
     addToFront(B) throws no Exception
     addToRear(B) throws no Exception
@@ -111,7 +112,7 @@ Define tests for at least 21 change scenarios, in addition to the 3 given as exa
     listIterator(0) throws UnsupportedOperationException
     toString() returns "[B, A]"
 7) [A] -> addToRear(B) -> [A,B]
-// 2nd scenario from one element to two element
+// 1st scenario from one element to two element
   Tests:
     addToFront(C) throws no Exceptions
     addToRear(C) throws no Exceptions
