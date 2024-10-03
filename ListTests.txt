@@ -3,7 +3,6 @@ Initial Test Plan for an IndexedUnsortedList
 Define tests for at least 21 change scenarios, in addition to the 3 given as examples. (Total of 24 or more.)
 
 1) no list -> constructor -> []
-// Scenario given from empty list to one element list (1)
   Tests:
     addToFront(A) throws no Exception
     addToRear(A) throws no Exception
@@ -32,7 +31,6 @@ Define tests for at least 21 change scenarios, in addition to the 3 given as exa
     listIterator(0) throws UnsupportedOperationException
     toString returns "[]"
 2) [] -> addToFront(A) -> [A]
-// Scenario from empty list to one element list (2)
   Tests:
     addToFront(B) throws no Exception
     addToRear(B) throws no Exception
@@ -41,7 +39,8 @@ Define tests for at least 21 change scenarios, in addition to the 3 given as exa
     add(B) throws no Exception
     add(-1, B) throws IndexOutOfBoundsException
     add(0, B) throws no Exception
-    add(1, B) throws IndexOutOfBoundsException
+    add(1, B) throws no Exception
+    add(2, B) throws IndexOutOfBoundsException
     removeFirst() throws no Exception
     removeLast() throws no Exception
     remove(A) throws no Exception
@@ -67,7 +66,6 @@ Define tests for at least 21 change scenarios, in addition to the 3 given as exa
     listIterator(0) throws UnsupportedOperationException
     toString returns "[A]"       
 3) [] -> addToRear(A) -> [A]
-// Scenario from empty list to one element list (3)
   Tests:
     addToFront(B) throws no Exception
     addToRear(B) throws no Exception
@@ -76,7 +74,8 @@ Define tests for at least 21 change scenarios, in addition to the 3 given as exa
     add(B) throws no Exception
     add(-1, B) throws IndexOutOfBoundsException
     add(0, B) throws no Exception
-    add(1, B) throws IndexOutOfBoundsException
+    add(1, B) throws no Exception
+    add(2, B) throws IndexOutOfBoundsException
     removeFirst() throws no Exception
     removeLast() throws no Exception
     remove(A) throws no Exception
@@ -102,7 +101,6 @@ Define tests for at least 21 change scenarios, in addition to the 3 given as exa
     listIterator(0) throws UnsupportedOperationException
     toString returns "[A]"   
 4) [] -> add(A) -> [A]
-// Scenario from empty list to one element list (4)
   Tests:
     addToFront(B) throws no Exception
     addToRear(B) throws no Exception
@@ -111,7 +109,8 @@ Define tests for at least 21 change scenarios, in addition to the 3 given as exa
     add(B) throws no Exception
     add(-1, B) throws IndexOutOfBoundsException
     add(0, B) throws no Exception
-    add(1, B) throws IndexOutOfBoundsException
+    add(1, B) throws no Exception
+    add(2, B) throws IndexOutOfBoundsException
     removeFirst() throws no Exception
     removeLast() throws no Exception
     remove(A) throws no Exception
@@ -137,7 +136,6 @@ Define tests for at least 21 change scenarios, in addition to the 3 given as exa
     listIterator(0) throws UnsupportedOperationException
     toString returns "[A]"  
 5) [] -> add(0,A) -> [A]
-// Scenario from empty list to one element list (5)
   Tests:
     addToFront(B) throws no Exception
     addToRear(B) throws no Exception
@@ -146,7 +144,8 @@ Define tests for at least 21 change scenarios, in addition to the 3 given as exa
     add(B) throws no Exception
     add(-1, B) throws IndexOutOfBoundsException
     add(0, B) throws no Exception
-    add(1, B) throws IndexOutOfBoundsException
+    add(1, B) throws no Exception
+    add(2, B) throws IndexOutOfBoundsException
     removeFirst() throws no Exception
     removeLast() throws no Exception
     remove(A) throws no Exception
@@ -172,7 +171,6 @@ Define tests for at least 21 change scenarios, in addition to the 3 given as exa
     listIterator(0) throws UnsupportedOperationException
     toString returns "[A]" 
 6) [A] -> addToFront(B) -> [B,A]
-// Given scenario one element list to two element list (6)
   Tests:
     addToFront(C) throws no Exceptions
     addToRear(C) throws no Exceptions
@@ -217,7 +215,6 @@ Define tests for at least 21 change scenarios, in addition to the 3 given as exa
     listIterator(0) throws UnsupportedOperationException
     toString() returns "[B, A]"
 7) [A] -> addToRear(B) -> [A,B]
-// 1st scenario from one element list to two element list (7)
   Tests:
     addToFront(C) throws no Exceptions
     addToRear(C) throws no Exceptions
@@ -262,7 +259,6 @@ Define tests for at least 21 change scenarios, in addition to the 3 given as exa
     listIterator(0) throws UnsupportedOperationException
     toString() returns "[A, B]"
 8) [A] -> addAfter(B,A) -> [A,B] 
-// 2nd scenario from one element list to two element list (8)
   Tests:
     addToFront(C) throws no Exceptions
     addToRear(C) throws no Exceptions
@@ -310,7 +306,6 @@ Define tests for at least 21 change scenarios, in addition to the 3 given as exa
 10) [A] -> add(0,B) -> [B,A]
 11) [A] -> add(1,B) -> [A,B]
 12) [A] -> removeFirst() -> []
-// Scenario from one element list to empty list (9)
   Tests:
     addToFront(A) throws no Exception
     addToRear(A) throws no Exception
@@ -339,7 +334,6 @@ Define tests for at least 21 change scenarios, in addition to the 3 given as exa
     listIterator(0) throws UnsupportedOperationException
     toString returns "[]"
 13) [A] -> removeLast() -> []
-// Scenario from one element list to empty list (10)
   Tests:
     addToFront(A) throws no Exception
     addToRear(A) throws no Exception
@@ -368,7 +362,6 @@ Define tests for at least 21 change scenarios, in addition to the 3 given as exa
     listIterator(0) throws UnsupportedOperationException
     toString returns "[]"
 14) [A] -> remove(A) -> []
-// Scenario from one element list to empty list (11)
   Tests:
     addToFront(A) throws no Exception
     addToRear(A) throws no Exception
@@ -397,7 +390,6 @@ Define tests for at least 21 change scenarios, in addition to the 3 given as exa
     listIterator(0) throws UnsupportedOperationException
     toString returns "[]"
 15) [A] -> remove(0) -> []
-// Scenario from one element list to empty list (12)
   Tests:
     addToFront(A) throws no Exception
     addToRear(A) throws no Exception
@@ -426,7 +418,6 @@ Define tests for at least 21 change scenarios, in addition to the 3 given as exa
     listIterator(0) throws UnsupportedOperationException
     toString returns "[]"
 16) [A] -> set(0,B) -> [B]
-// Scenario one element to one element (13)
   Tests:
     addToFront(A) throws no Exception
     addToRear(A) throws no Exception
@@ -461,7 +452,6 @@ Define tests for at least 21 change scenarios, in addition to the 3 given as exa
     listIterator(0) throws UnsupportedOperationException
     toString returns "[B]"
 17) [A,B] -> addToFront(C) -> [C,A,B]
-// 1st scenario from two element to three element (14)
   Tests:
     addToFront(D) throws no Exceptions
     addToRear(D) throws no Exceptions
@@ -513,7 +503,6 @@ Define tests for at least 21 change scenarios, in addition to the 3 given as exa
     listIterator(0) throws UnsupportedOperationException
     toString() returns "[C, A, B]"
 18) [A,B] -> addToRear(C) -> [A,B,C]
-// 2nd scenario from two element to three element (15)
   Tests:
     addToFront(D) throws no Exceptions
     addToRear(D) throws no Exceptions
@@ -571,7 +560,6 @@ Define tests for at least 21 change scenarios, in addition to the 3 given as exa
 23) [A,B] -> add(1,C) -> [A,C,B]
 24) [A,B] -> add (2,C) -> [A,B,C]
 25) [A,B] -> removeFirst() -> [B]
-// Scenario one element to one element (16)
   Tests:
     addToFront(A) throws no Exception
     addToRear(A) throws no Exception
@@ -608,7 +596,6 @@ Define tests for at least 21 change scenarios, in addition to the 3 given as exa
     listIterator(0) throws UnsupportedOperationException
     toString returns "[B]"
 26) [A,B] -> removeLast() -> [A]
-// Scenario one element to one element (17)
   Tests:
     addToFront(B) throws no Exception
     addToRear(B) throws no Exception
@@ -645,7 +632,6 @@ Define tests for at least 21 change scenarios, in addition to the 3 given as exa
     listIterator(0) throws UnsupportedOperationException
     toString returns "[A]"
 27) [A,B] -> remove(A) -> [B]
-// Scenario one element to one element (18)
   Tests:
     addToFront(A) throws no Exception
     addToRear(A) throws no Exception
@@ -682,7 +668,6 @@ Define tests for at least 21 change scenarios, in addition to the 3 given as exa
     listIterator(0) throws UnsupportedOperationException
     toString returns "[B]"
 28) [A,B] -> remove(B) -> [A]
-// Scenario one element to one element (19)
   Tests:
     addToFront(B) throws no Exception
     addToRear(B) throws no Exception
@@ -719,7 +704,6 @@ Define tests for at least 21 change scenarios, in addition to the 3 given as exa
     listIterator(0) throws UnsupportedOperationException
     toString returns "[A]"
 29) [A,B] -> remove(0) -> [B] 
-// Scenario one element to one element (20)
   Tests:
     addToFront(A) throws no Exception
     addToRear(A) throws no Exception
@@ -756,7 +740,6 @@ Define tests for at least 21 change scenarios, in addition to the 3 given as exa
     listIterator(0) throws UnsupportedOperationException
     toString returns "[B]"
 30) [A,B] -> remove(1) -> [A]
-// Scenario one element to one element (21)
   Tests:
     addToFront(B) throws no Exception
     addToRear(B) throws no Exception
@@ -799,13 +782,12 @@ Define tests for at least 21 change scenarios, in addition to the 3 given as exa
 35) [A,B,C] -> remove(A) -> [B,C]
 36) [A,B,C] -> remove(B) -> [A,C]
 37) [A,B,C] -> remove(C) -> [A,B]
-// 1st scenario from three element list to two element list (22)
   Tests:
     addToFront(D) throws no Exceptions
     addToRear(D) throws no Exceptions
     addAfter(D, A) throws no Exceptions
-    addAfter(D, C) throws NoSuchElementException
     addAfter(D, B) throws no Exceptions
+    addAfter(D, C) throws NoSuchElementException
     add(D) throws no Exception
     add(-1, D) throws IndexOutOfBoundsException
     add(0, D) throws no Exception
@@ -844,13 +826,12 @@ Define tests for at least 21 change scenarios, in addition to the 3 given as exa
     listIterator(0) throws UnsupportedOperationException
     toString() returns "[A, B]"
 38) [A,B,C] -> remove(0) -> [B,C]
-// 2nd scenario from three element list to two element list (23)
   Tests:
     addToFront(D) throws no Exceptions
     addToRear(D) throws no Exceptions
     addAfter(D, A) throws NoSuchElementException
-    addAfter(D, C) throws no Exceptions
     addAfter(D, B) throws no Exceptions
+    addAfter(D, C) throws no Exceptions
     add(D) throws no Exception
     add(-1, D) throws IndexOutOfBoundsException
     add(0, D) throws no Exception
@@ -889,13 +870,12 @@ Define tests for at least 21 change scenarios, in addition to the 3 given as exa
     listIterator(0) throws UnsupportedOperationException
     toString() returns "[B, C]"
 39) [A,B,C] -> remove(1) -> [A,C]
-// Given scenario from three element list to two element list (24)
   Tests:
     addToFront(D) throws no Exceptions
     addToRear(D) throws no Exceptions
     addAfter(D, A) throws no Exceptions
-    addAfter(D, C) throws no Exceptions
     addAfter(D, B) throws NoSuchElementException
+    addAfter(D, C) throws no Exceptions
     add(D) throws no Exception
     add(-1, D) throws IndexOutOfBoundsException
     add(0, D) throws no Exception
